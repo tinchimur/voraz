@@ -1,0 +1,405 @@
+$colorP: #c4920b;
+$fuenteP: 'Wellfleet', cursive;
+$texto: 'Kameron', serif;
+$modo: noche; 
+$fila: 3;
+
+body {
+    @if $modo == dia {
+        background-color: white;
+        color: black;
+    } @else if $modo == noche {
+        background-color: black;
+        color: white;
+    }
+    margin: 0 1% 0 1%;
+    font-family: $texto;
+    line-height: 1.5;
+}
+
+nav {
+    font-family: $fuenteP;
+    @if $modo == dia {
+        background-color: white;
+    } @else if $modo == noche {
+        background-color: black;
+    }
+    ul {
+        margin: 0;
+    }
+    .colorMenu li a{
+        color: $colorP;
+    }
+}
+
+a {
+    @if $modo == dia {
+        color: black;
+    } @else if $modo == noche {
+        color: white;
+    }
+    text-decoration: none;
+    font-family: $fuenteP;
+    font-size: 100%;
+    transition: all 0.5s;
+}
+a:hover {
+    color: $colorP;
+    font-size: 110%;
+    text-decoration: none;
+    }
+
+h2 {
+    font-family: $fuenteP;
+    letter-spacing: 1em;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    .initial {
+    font-size: 2em;
+    color: $colorP;
+    font-family: $fuenteP;
+    word-spacing: 1px;
+    }
+    .initial:hover {
+    font-size: 2.1em;
+    }
+
+}    
+
+footer ul {
+    padding: 0;
+}
+
+.initialF {
+    font-size: 1.5em;
+    color: $colorP;
+    font-family: $fuenteP;
+    text-align: left;
+}
+.initialF:hover {
+    font-size: 1.6em;
+}
+
+.aparecer {
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+.marginTop {
+    margin-top: 3%;
+}
+
+.letraamarilla {
+    color: $colorP;
+}
+
+.DistintosRenglones {
+        @if $modo == dia {
+            color: black;
+        } @else if $modo == noche {
+            color: white;
+        }
+        overflow: visible;
+        width: 20%;
+        font-family: $fuenteP;
+        letter-spacing: 1.1em;
+        font-size: 200%;
+        strong {
+        font-size: 150%;
+        letter-spacing: 3px;
+        }
+
+#franchise {
+    color: white;
+    background-color: $colorP;
+    text-align: center;
+    padding-top: 1%;
+    #linkNegro {
+    @if $modo == dia {
+        color: white;
+    } @else if $modo == noche {
+        color: black;
+    } }
+    #linkNegro:hover {
+    @if $modo == dia {
+        color: black;
+    } @else if $modo == noche {
+        color: white;
+    } }
+    img {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    }
+}
+
+
+
+#locales {
+    justify-items: center;
+    align-items: start;
+    text-align: center;
+    margin-top: 1.5%;
+    ul{
+    padding: 0;
+    }
+    img {
+        max-height: 400px;
+    }
+    img:hover {
+    transform: scale(1.1);
+    }
+}
+
+#hamburguesas {
+    color: black;
+    background-color: white;
+    text-align: center;
+    div div img {
+        border: solid 3px white;
+    }
+    .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    }
+}
+
+#delivery {
+    color: #000000;
+    background-color: white;
+    text-align: center;
+    padding: 2% 1% 3% 1%;
+    h2 {
+    color: $colorP;
+    padding-top: 1%;
+    }
+    div {
+    overflow: hidden;
+    }
+    div a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+    div a img {
+    width: 100%;
+    height: 100%;
+    }
+    #gridDelivery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr;
+    grid-column-gap: 3%;
+    justify-items: stretch;
+    }
+    #rappi {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    }
+    #glovo {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    }
+    #uber {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    }
+    #pedidos {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    }
+}
+
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#contact-form {
+    background-color: white;
+    color: black;
+    padding: 2% 0% 2% 0%;
+    div {
+    justify-items: left;
+    align-items: start;
+    }
+    form {
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 3%;
+    }
+    h2 {
+    color: $colorP;
+    margin: 0;
+    padding-top: 3%;
+    }
+    #mapa {
+    margin-top: 8%;
+    }
+    .submit {
+        color: white;
+        background-color: $colorP;
+        border-color: $colorP;
+        width: 100%;
+        letter-spacing: 0.5em;
+    }
+    .submit:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: 10;
+    cursor: pointer;
+    }
+    .anchoForm {
+        width: 95% !important; 
+        margin-left: 2.5%;
+    }
+}
+
+.imagenInicio {
+    max-height: 500px;
+}
+
+.submitF:hover {
+    color: black;
+    background-color: $colorP;
+    border-color: $colorP;
+}
+
+.padding {
+    padding: 0;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@for $i from 1 through $fila {
+    .fila-#{$i} {
+        width: (100% / $i);
+        position: relative;
+    }
+
+}
+
+.container-3:hover .image {
+    opacity: 0.3;
+}
+  
+.container-3:hover .middle {
+    opacity: 1;
+}
+  
+.container-2:hover .image {
+    opacity: 0.3;
+}
+  
+.container-2:hover .middle {
+    opacity: 1;
+}
+
+.container-1:hover .image {
+    opacity: 0.3;
+}
+  
+.container-1:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: $colorP;
+    color: white;
+    font-size: 100%;
+    padding: 16px 32px;
+    a {
+    color: white;
+    }
+}
+
+.middleInicio {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    .home {
+        font-family: $fuenteP;
+        color: white;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        letter-spacing: 2em;
+        font-size: 830%;
+        height: 103%;
+        align-items: center;
+    }    
+}
+
+.menu div {
+    border: solid 1px grey;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 576px) {
+    .text {
+        padding: 0;
+    }    
+    .middleInicio {
+        transition: .5s ease;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: center;
+        .home {
+        font-family: $fuenteP;
+        color: white;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        letter-spacing: 1.5em;
+        font-size: 200%;
+        height: 103%;
+        align-items: center; }
+    }
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+}
