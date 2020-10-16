@@ -6,48 +6,55 @@
     <meta name="description" content="11-6459-8672. Aguilar 2391, Belgrano. Callao 1025, Recoleta">
     <meta name="keywords"  content="BELGRANO, RECOLETA, CAP FEDERAL, TELÉFONO, DIRECCIÓN, COLEGIALES">
     <title>Contacto</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kameron&family=Wellfleet&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="png" href="img/hamburguesa.png">
 </head>
 <body  class="container">
-   
     <header>
         <nav class="navbar navbar-expand-lg">
-            <ul class="nav justify-content-start h-auto">
-                <li class="nav-item justify-content-start"><a href="index.html" class="initial nav-link"><strong>VORAZ</strong></a></li>
-            </ul>
-            <a class="d-md-block d-lg-none col-3 offset-6 px-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Icono.png" width="40%" height="100%" class="img-fluid"></a>
-            <ul class="dropdown-menu colorMenu flex-column" role="menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">NOSOTROS</a></li>
-                <li class="nav-item"><a href="franquicias.html" class="nav-link">FRANQUICIAS</a></li>
-                <li class="nav-item"><a href="galeria.html" class="nav-link">GALERÍA</a></li>
-                <li class="nav-item"><a href="menu.html" class="nav-link">MENÚ</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-            </ul>
-            <ul class="form-inline ml-lg-auto d-none d-lg-block d-md-none d-lg-inline-flex padding">
-                <li class="nav-item"><a href="index.html" class="nav-link">NOSOTROS</a></li>
-                <li class="nav-item"><a href="franquicias.html" class="nav-link">FRANQUICIAS</a></li>
-                <li class="nav-item"><a href="galeria.html" class="nav-link">GALERÍA</a></li>
-                <li class="nav-item"><a href="menu.html" class="nav-link">MENÚ</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link">CONTACTO</a></li>
-            </ul>
+            <a href="index.html" class="navbar-brand initial"><strong>VORAZ</strong></a>
+            <button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="franquicias.html" class="nav-link">FRANQUICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">MENÚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section  id="contact-form">
         <div class="row">
             <div class="col offset-xl-6 offset-lg-2 offset-sm-2">
-                <h2>CONTACTO</h2>
+                <h1>CONTACTO</h1>
             </div>
         </div>
         
         <div class="row">
             <form class="col-lg-5 col-xl-5 col-md-12 col-sm-12 order-lg-1 order-xl-1">
-                <div class="d-inline-flex form-group col-lg-12 padding justify-content-between">
+                <div class="d-inline-flex form-group col-lg-12 p-0 justify-content-between flex">
                     <div class="form-text col-lg-6 ">
                         <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
                     </div>
@@ -55,16 +62,18 @@
                         <input type="number" class="form-control" id="celular" placeholder="Nº de Celular">
                     </div>
                 </div>
-                <div class="d-inline-flex form-text form-group col-12 padding">
-                    <input type="email" class="form-control anchoForm" id="mail" placeholder="E-mail">
+                <div class="d-inline-flex form-text form-group col-12 p-0">
+                    <input type="email" class="form-control anchoForm" id="email" placeholder="E-mail">
                 </div>
-                <div class="d-inline-flex form-text form-group col-12 padding">
-                    <textarea type="text" class="form-control anchoForm" id="busqueda" style="height:8rem">¿Qué estás buscando?</textarea>
+                <div class="d-inline-flex form-text form-group col-12 p-0">
+                    <textarea type="text" class="form-control anchoForm" id="mensaje" style="height:8rem">¿Qué estás buscando?</textarea>
                 </div>
                 <div class="d-inline-flex anchoForm">
                     <input type="submit" id="enviar" value="ENVIAR" style="height:2.2rem" class="submit btn mx-auto animate__animated animate__bounceIn">
                 </div>
             </form>
+
+           
         
             <div class="col-lg-5 col-xl-5 offset-1 col-md-11 col-sm-11 order-xl-0 order-lg-0">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13141.620980729846!2d-58.455716632755035!3d-34.568611280468666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c5cbf973fb%3A0xa5963dd90ab05e6a!2sAguilar%202391%2C%20C1426%20DSG%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1596776437380!5m2!1ses!2sar" width="90%" height=300px frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapa"></iframe>
@@ -108,14 +117,14 @@
             </div>
         </div>
     </footer> 
-
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
-
+    </script>
+    
 </body>
 </html>
