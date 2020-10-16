@@ -1,1 +1,292 @@
-body{background-color:black;color:white;margin:0 1% 0 1%;font-family:"Kameron",serif;line-height:1.5}nav{font-family:"Wellfleet",cursive;background-color:black}nav ul{margin:0}nav .colorMenu li a{color:#c4920b}a{color:white;text-decoration:none;font-family:"Wellfleet",cursive;font-size:100%}a:hover{color:#c4920b;font-size:110%;text-decoration:none}h2{font-family:"Wellfleet",cursive;letter-spacing:1rem}ul li{list-style:none;padding:0}ul li .initial{font-size:2rem;color:#c4920b;font-family:"Wellfleet",cursive;word-spacing:1px}ul li .initial:hover{font-size:2.1rem}.initialF{font-size:1.5rem;color:#c4920b;font-family:"Wellfleet",cursive;text-align:left}.initialF:hover{font-size:1.6rem}.aparecer{animation-duration:4s;animation-name:aparecer}.marginTop{margin-top:3%}.letraamarilla{color:#c4920b}#about{grid-area:about;margin-top:2%;margin-bottom:3%}#about #nosotrosimg{grid-area:nimg;margin:auto}#about .dosRenglones{color:white;overflow:visible;width:20%;font-family:"Wellfleet",cursive;letter-spacing:1.1rem;font-size:200%}#about .dosRenglones strong{font-size:200%;letter-spacing:20%}#about .abouttext{margin-left:4%}#equipo{margin-top:3%;margin-bottom:2%}#equipo div p{padding-left:2%}#equipo .fondoAmarillo{background-color:#c4920b}#equipo .DosRenglones{color:white;overflow:visible;width:2rem;font-family:"Wellfleet",cursive;letter-spacing:1.1rem;font-size:180%;padding-left:2%}#equipo .DosRenglones strong{font-size:200%;letter-spacing:2rem}#franchise{color:white;background-color:#c4920b;text-align:center;padding-top:1%}#franchise #linkNegro{color:black}#franchise #linkNegro:hover{color:white}#franchise img{animation-duration:4s;animation-name:aparecer}#locales{justify-items:center;align-items:start;text-align:center;margin-top:1.5%;overflow:hidden}#locales ul li{padding-top:1%}#locales img:hover{transform:scale(1.1)}#hamburguesas{color:black;background-color:white;text-align:center}#hamburguesas div div img{border:solid 3px white}#hamburguesas .flex{display:flex;flex-wrap:wrap;justify-content:space-between;align-content:stretch}#delivery{color:#000000;background-color:white;text-align:center;padding:2% 1% 5% 1%}#delivery h2{color:#c4920b;padding-top:1%}#delivery div{overflow:hidden}#delivery div a:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}#delivery div a img{width:100%;height:100%}#delivery #gridDelivery{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:5fr;grid-column-gap:3%;justify-items:stretch}#delivery #rappi{animation-duration:4s;animation-name:aparecer}#delivery #glovo{animation-duration:4s;animation-name:aparecer}#delivery #uber{animation-duration:4s;animation-name:aparecer}#delivery #pedidos{animation-duration:4s;animation-name:aparecer}#contact-form{background-color:white;color:black;padding:2% 0% 2% 0%}#contact-form div{justify-items:left;align-items:start}#contact-form form{justify-content:space-between;align-items:start;margin-top:3%}#contact-form h2{color:#c4920b}#contact-form #mapa{margin-top:8%}#contact-form #contacto{margin:0;padding-top:3%}#contact-form .letraamarilla{color:#c4920b;font-size:1rem}#contact-form .submit{color:white;background-color:#c4920b;border-color:#c4920b;width:100%}#contact-form .submit:hover{color:white;background-color:black;border-color:black;font-size:10;cursor:pointer}#contact-form .anchoForm{width:95% !important;margin-left:2.5%}#contact-form .paddingIzquierdo{padding-left:2.5%}#contact-form .espacio{letter-spacing:0.5rem}.submitF:hover{color:black;background-color:#c4920b;border-color:#c4920b}.padding{padding:0}.image{opacity:1;display:block;transition:.5s ease;backface-visibility:hidden;width:100%;height:100%}.middle{transition:.5s ease;opacity:0;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);text-align:center}.container-1{width:100%;position:relative}.container-2{width:50%;position:relative}.container-3{width:33.33333%;position:relative}.container-3:hover .image{opacity:0.3}.container-3:hover .middle{opacity:1}.container-2:hover .image{opacity:0.3}.container-2:hover .middle{opacity:1}.container-1:hover .image{opacity:0.3}.container-1:hover .middle{opacity:1}.text{background-color:#c4920b;color:white;font-size:100%;padding:16px 32px}.text a{color:white}.middleInicio{transition:.5s ease;opacity:1;position:absolute;top:50%;left:52%;transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);text-align:center;align-items:center}.middleInicio .home{font-family:"Wellfleet",cursive;color:white;text-align:center;background-repeat:no-repeat;background-position:center;background-size:cover;letter-spacing:2rem;font-size:830%;height:103%;align-items:center}@media (max-width: 576px){.dosRenglones{font-size:140%}.dosRenglones strong{font-size:190%}.DosRenglones{font-size:140%}.DosRenglones strong{font-size:190%}.text{padding:0}.equipo div{padding:0}.middleInicio{transition:.5s ease;opacity:1;position:absolute;top:50%;left:54%;transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);text-align:center;align-items:center}.middleInicio .home{font-family:"Wellfleet",cursive;color:white;text-align:center;background-repeat:no-repeat;background-position:center;background-size:cover;letter-spacing:1.5rem;font-size:200%;height:103%;align-items:center}}@keyframes aparecer{0%{opacity:0}70%{opacity:1}}
+body {
+    background-color: black;
+    color: white;
+    margin: 0 1% 0 1%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.1vw;
+}
+
+h1 {
+    font-family: 'Podkova', serif;
+    font-size: 4vw;
+}
+
+nav {
+    font-family: 'Podkova', serif;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Podkova', serif;
+    font-size: 100%;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #c4920b;
+    font-size: 110%;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Podkova', serif;
+    letter-spacing: 0.1vw;
+}
+
+video {
+    opacity: 0.7;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+}    
+
+footer ul {padding: 0;}
+
+.initial {
+    font-size: 2rem;
+    color: #c4920b;
+    font-family: 'Podkova', serif;
+    word-spacing: 1px;
+}
+
+.initialF {
+    font-size: 1.7vw;
+    color: #c4920b;
+    font-family: 'Podkova', serif;
+    text-align: left;
+}
+
+.initialF:hover {}
+
+.BurgerLove {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.BurgerLove button:hover a{
+    color: brown;
+}
+
+.BurgerLove button a:hover{
+    color: brown;
+}
+
+.aparecer {
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+.letraColor {color: #c4920b;}
+
+.espaciado {
+    color: white;
+    overflow: visible;
+    width: 85%;
+    font-family: 'Podkova', serif;
+    letter-spacing: 0.7rem;
+    font-size: 3vw;
+}
+
+.espaciado strong {
+    font-size: 3.4rem;
+    letter-spacing: 1.5vw;
+}
+
+#franchise {
+    color: white;
+    background-color: #c4920b;
+    text-align: center;
+    padding-top: 1%;
+}
+
+#franchise img {
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+.textoNegro {color: black;}
+.textoNegro:hover {color: white;}
+
+#hamburguesas {
+    color: black;
+    background-color: white;
+    text-align: center;
+}    
+
+#hamburguesas div div img {border: solid 3px white;}
+
+.fondoMenu {background-image: url("img/fondoMenu.jpg");}
+
+#menuHamburguesas {
+    color: black;
+    font-size: 1.4vw;
+    background-image: url("img/fondoMenu.jpg");
+}
+
+#menuHamburguesas h1 {
+    color: white;
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+
+#menuHamburguesas h2 {
+    color: #745605;
+    padding-top: 1%;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+#contact-form {
+    background-color: white;
+    color: black;
+    padding: 2% 0% 2% 0%;
+}
+
+#contact-form form {
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 3%;
+}
+#contact-form #mapa {margin-top: 8%;}
+
+#contact-form .anchoForm {
+    width: 94% !important; 
+    margin-left: 2.5%;
+}
+
+.submit {
+    color: white;
+    background-color: #c4920b;
+    border-color: #c4920b;
+    width: 100%;
+    letter-spacing: 0.5em;
+}
+
+.submit:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: 10;
+    cursor: pointer;
+}
+
+.imagenInicio {
+    align-items: center;
+    max-height: 450px;
+}
+
+.submitF {
+    color: black;
+    background-color: #c4920b;
+    border-color: #c4920b;
+}
+.submitF:hover {color: white;}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fila-1{width:100%;position:relative}
+.fila-2{width:50%;position:relative}
+.fila-3{width:33.33333%;position:relative}
+
+.fila-3:hover .image {opacity: 0.3;}
+.fila-3:hover .middle {opacity: 1;}
+  
+.fila-2:hover .image {opacity: 0.3;}
+.fila-2:hover .middle {opacity: 1;}
+
+.fila-1:hover .image {opacity: 0.3;}
+.fila-1:hover .middle {opacity: 1;}
+
+.text {
+    background-color: #c4920b;
+    color: white;
+    font-size: 100%;
+    padding: 1vw 1vw;
+}
+.text a {color: white;}
+
+.middleInicio {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home {
+    font-family: 'Podkova', serif;
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 2vw;
+    font-size: 12vw;
+    height: 103%;
+    align-items: center;
+}
+
+.menu div {
+    border: solid 1px grey;
+    background-color: white;
+    color: black;
+}
+
+.SpecialElite {font-family: 'Special Elite', cursive;}
+
+.BurgerLove .SpecialElite {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5vw;
+    width: 100%;
+    color: rgb(21, 21, 61);
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+}
