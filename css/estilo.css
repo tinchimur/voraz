@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     letter-spacing: 0.1vw;
+    font-size: 0.85rem;
 }
 
 h1 {
@@ -15,6 +16,7 @@ h1 {
 nav {
     font-family: 'Podkova', serif;
     background-color: black;
+    font-size: 1.1rem;
 }
 
 a {
@@ -33,7 +35,9 @@ a:hover {
 
 h2 {
     font-family: 'Podkova', serif;
-    letter-spacing: 0.1vw;
+    font-size: 1.8rem;
+    letter-spacing: 0.8vw;
+    overflow: hidden;
 }
 
 video {
@@ -45,38 +49,74 @@ ul li {
     padding: 0;
 }    
 
+hr {
+    border-top: 1px solid #c4920b;
+}
+
 footer ul {padding: 0;}
 
-.initial {
-    font-size: 2rem;
+.initial h1{
+    font-size: 2.8rem;
     color: #c4920b;
     font-family: 'Podkova', serif;
-    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.initial h1:hover {
+    font-size: 2.8rem;
+    color: #c4920b;
+    font-family: 'Podkova', serif;
+    letter-spacing: 1px;
 }
 
 .initialF {
-    font-size: 1.7vw;
+    font-size: 124%;
     color: #c4920b;
     font-family: 'Podkova', serif;
     text-align: left;
-}
+} 
 
-.initialF:hover {}
+.initialF:hover {
+    font-size: 124%;
+}
 
 .BurgerLove {
     transition: .5s ease;
-    opacity: 1;
-    position: absolute;
-    top: 33%;
     left: 50%;
+    top: 33%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 2vw;
+    font-size: 4vmin;
+}
+
+.BurgerLove img {
+    width: 50%;
+    min-width: 65px;
 }
 
 .BurgerLove button:hover a{
     color: brown;
+}
+
+.BurgerLove button {
+    display: inline-block;
+    font-weight: 400;
+    color: #f8f9fa;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    padding: 1vw 1vw;
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .BurgerLove button a:hover{
@@ -95,12 +135,12 @@ footer ul {padding: 0;}
     overflow: visible;
     width: 85%;
     font-family: 'Podkova', serif;
-    letter-spacing: 0.7rem;
-    font-size: 3vw;
+    letter-spacing: 1vw;
+    font-size: 2.5rem;
 }
 
 .espaciado strong {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
     letter-spacing: 1.5vw;
 }
 
@@ -114,6 +154,7 @@ footer ul {padding: 0;}
 #franchise img {
     animation-duration: 4s;
     animation-name: aparecer;
+    min-height: 200px;
 }
 
 .textoNegro {color: black;}
@@ -127,26 +168,30 @@ footer ul {padding: 0;}
 
 #hamburguesas div div img {border: solid 3px white;}
 
-.fondoMenu {background-image: url("img/fondoMenu.jpg");}
-
 #menuHamburguesas {
     color: black;
-    font-size: 1.4vw;
-    background-image: url("img/fondoMenu.jpg");
+    font-size: 0.85rem;
 }
 
-#menuHamburguesas h1 {
-    color: white;
-    text-align: center;
-    margin: 5px 0 5px 0;
-}
-
-#menuHamburguesas h2 {
+#menuHamburguesas h3 {
     color: #745605;
     padding-top: 1%;
     letter-spacing: 0;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
+}
+
+#menuHamburguesas .fondoMenu {
+    background-image: url("D:/Voraz/img/FondoMenu.jpg");
+    background-attachment: fixed;
+}
+
+#menuHamburguesas h2 {
+    color: black;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 5rem;
+    font-family: 'Podkova', serif;
 }
 
 .flex {
@@ -162,18 +207,6 @@ footer ul {padding: 0;}
     padding: 2% 0% 2% 0%;
 }
 
-#contact-form form {
-    justify-content: space-between;
-    align-items: start;
-    margin-top: 3%;
-}
-#contact-form #mapa {margin-top: 8%;}
-
-#contact-form .anchoForm {
-    width: 94% !important; 
-    margin-left: 2.5%;
-}
-
 .submit {
     color: white;
     background-color: #c4920b;
@@ -181,7 +214,6 @@ footer ul {padding: 0;}
     width: 100%;
     letter-spacing: 0.5em;
 }
-
 .submit:hover{
     color: white;
     background-color: black;
@@ -192,7 +224,7 @@ footer ul {padding: 0;}
 
 .imagenInicio {
     align-items: center;
-    max-height: 450px;
+    max-height: 420px;
 }
 
 .submitF {
@@ -222,6 +254,7 @@ footer ul {padding: 0;}
     text-align: center;
 }
 
+
 .fila-1{width:100%;position:relative}
 .fila-2{width:50%;position:relative}
 .fila-3{width:33.33333%;position:relative}
@@ -238,7 +271,7 @@ footer ul {padding: 0;}
 .text {
     background-color: #c4920b;
     color: white;
-    font-size: 100%;
+    font-size: 1.8vw;
     padding: 1vw 1vw;
 }
 .text a {color: white;}
@@ -247,7 +280,7 @@ footer ul {padding: 0;}
     transition: .5s ease;
     opacity: 1;
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 51%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -277,10 +310,66 @@ footer ul {padding: 0;}
 
 .BurgerLove .SpecialElite {
     font-family: 'Special Elite', cursive;
-    font-size: 2.5vw;
+    font-size: 100%;
     width: 100%;
     color: rgb(21, 21, 61);
 }
+
+@media (min-width: 1200px) {
+    .card-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-gap: 1.25rem;
+      -moz-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 3;
+      column-count: 2;
+      -webkit-column-gap: 1.25rem;
+      -moz-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+    .flex-hamburguesas {
+        width: 50%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-gap: 1.25rem;
+      -moz-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+      orphans: 1;
+      widows: 1;
+    }
+    .card-columns .card {
+      display: inline-block;
+      width: 100%;
+    }
+    .flex-hamburguesas {
+        width: 100%;
+    }
+  }
 
 @keyframes aparecer {
     0% {
