@@ -5,18 +5,40 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     letter-spacing: 0.1vw;
-    font-size: 0.85rem;
-}
-
-h1 {
-    font-family: 'Podkova', serif;
-    font-size: 4vw;
+    font-size: 0.9rem;
 }
 
 nav {
     font-family: 'Podkova', serif;
     background-color: black;
     font-size: 1.1rem;
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+} 
+
+footer ul {padding: 0;}   
+
+h1 {
+    font-family: 'Podkova', serif;
+    font-size: 4vw;
+}
+h2 {
+    font-family: 'Podkova', serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.8vw;
+    overflow: hidden;
+}
+
+h3 {
+    color: #745605;
+    padding-top: 1%;
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 a {
@@ -33,27 +55,16 @@ a:hover {
     text-decoration: none;
 }
 
-h2 {
-    font-family: 'Podkova', serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.8vw;
-    overflow: hidden;
-}
+video {opacity: 0.7;}
 
-video {
-    opacity: 0.7;
-}
+hr {border-top: 1px solid #c4920b;}
 
-ul li {
-    list-style: none;
-    padding: 0;
-}    
+.SpecialElite {font-family: 'Special Elite', cursive;}
 
-hr {
-    border-top: 1px solid #c4920b;
-}
+.letraColor {color: #c4920b;}
 
-footer ul {padding: 0;}
+.textoNegro {color: black;}
+.textoNegro:hover {color: white;}
 
 .initial h1{
     font-size: 2.8rem;
@@ -80,201 +91,45 @@ footer ul {padding: 0;}
     font-size: 124%;
 }
 
-.BurgerLove {
-    transition: .5s ease;
-    left: 50%;
-    top: 33%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 2vw;
-    font-size: 4vmin;
+.submitF {
+    padding: 0.5% 0.2% 0.5% 0.2%;
+    border-top: 12%;
+    color: black;
+    background-color: #c4920b;
+    border-color: #c4920b;
+    border: 1px solid transparent;
+    padding: 0.05rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 0.15rem;
 }
-
-.BurgerLove img {
-    width: 50%;
-    min-width: 65px;
-}
-
-.BurgerLove button:hover a{
-    color: brown;
-}
-
-.BurgerLove button {
-    display: inline-block;
-    font-weight: 400;
-    color: #f8f9fa;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid #f8f9fa;
-    padding: 1vw 1vw;
-    font-size: 2vw;
-    letter-spacing: 0.1vw;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.BurgerLove button a:hover{
-    color: brown;
-}
+.submitF:hover {color: white;}
 
 .aparecer {
     animation-duration: 4s;
     animation-name: aparecer;
+    margin: 0;
+    padding: 0;
 }
 
-.letraColor {color: #c4920b;}
-
-.espaciado {
-    color: white;
-    overflow: visible;
-    width: 85%;
-    font-family: 'Podkova', serif;
-    letter-spacing: 1vw;
-    font-size: 2.5rem;
-}
-
-.espaciado strong {
-    font-size: 2.8rem;
-    letter-spacing: 1.5vw;
-}
-
-#franchise {
-    color: white;
-    background-color: #c4920b;
-    text-align: center;
-    padding-top: 1%;
-}
-
-#franchise img {
-    animation-duration: 4s;
-    animation-name: aparecer;
-    min-height: 200px;
-}
-
-.textoNegro {color: black;}
-.textoNegro:hover {color: white;}
-
-#hamburguesas {
-    color: black;
-    background-color: white;
-    text-align: center;
-}    
-
-#hamburguesas div div img {border: solid 3px white;}
-
-#menuHamburguesas {
-    color: black;
-    font-size: 0.85rem;
-}
-
-#menuHamburguesas h3 {
-    color: #745605;
-    padding-top: 1%;
-    letter-spacing: 0;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-#menuHamburguesas .fondoMenu {
-    background-image: url("D:/Voraz/img/FondoMenu.jpg");
-    background-attachment: fixed;
-}
-
-#menuHamburguesas h2 {
-    color: black;
-    text-align: center;
-    margin: 40px 0 40px 0;
-    font-size: 5rem;
-    font-family: 'Podkova', serif;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: stretch;
-}
-
-#contact-form {
-    background-color: white;
-    color: black;
-    padding: 2% 0% 2% 0%;
-}
-
-.submit {
-    color: white;
-    background-color: #c4920b;
-    border-color: #c4920b;
-    width: 100%;
-    letter-spacing: 0.5em;
-}
-.submit:hover{
-    color: white;
-    background-color: black;
-    border-color: black;
-    font-size: 10;
-    cursor: pointer;
-}
-
-.imagenInicio {
-    align-items: center;
-    max-height: 420px;
-}
-
-.submitF {
-    color: black;
-    background-color: #c4920b;
-    border-color: #c4920b;
-}
-.submitF:hover {color: white;}
-
-.image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    width: 100%;
+.scrollbar { 
     height: 100%;
-}
-  
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    overflow-y: scroll;
 }
 
-
-.fila-1{width:100%;position:relative}
-.fila-2{width:50%;position:relative}
-.fila-3{width:33.33333%;position:relative}
-
-.fila-3:hover .image {opacity: 0.3;}
-.fila-3:hover .middle {opacity: 1;}
-  
-.fila-2:hover .image {opacity: 0.3;}
-.fila-2:hover .middle {opacity: 1;}
-
-.fila-1:hover .image {opacity: 0.3;}
-.fila-1:hover .middle {opacity: 1;}
-
-.text {
-    background-color: #c4920b;
-    color: white;
-    font-size: 1.8vw;
-    padding: 1vw 1vw;
+.scrollbar-color::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0.534); 
 }
-.text a {color: white;}
+
+.scrollbar-color::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
+    background-color: white; 
+}
+
+.scrollbar-color {
+    scrollbar-color: white;
+}
 
 .middleInicio {
     transition: .5s ease;
@@ -300,13 +155,78 @@ footer ul {padding: 0;}
     align-items: center;
 }
 
-.menu div {
-    border: solid 1px grey;
-    background-color: white;
-    color: black;
+.espaciado {
+    color: white;
+    overflow: visible;
+    width: 70%;
+    font-family: 'Podkova', serif;
+    letter-spacing: 0.8vw;
+    font-size: 2.3rem;
 }
 
-.SpecialElite {font-family: 'Special Elite', cursive;}
+.espaciado strong {
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 1.5vw;
+}
+
+.imagenInicio {
+    align-items: center;
+    max-height: 420px;
+}
+
+.BurgerLove {
+    transition: .5s ease;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2vw;
+}
+
+.BurgerLove h2 {
+    padding-top: 2rem;
+}
+
+.BurgerLove img {
+    top: 0%;
+    width: 50%;
+    min-width: 70px;
+}
+
+.BurgerLove button:hover a{color: brown;}
+
+.BurgerLove button {
+    display: inline-block;
+    font-weight: 400;
+    color: #f8f9fa;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    margin-top: 0.5rem;
+    padding: 0.3vw 0.3vw;
+    font-size: 2vw;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (max-width: 575.98px) {
+    .BurgerLove {
+        padding-bottom: 0;
+    }
+    .BurgerLove button {
+        font-size: 4vw;
+        padding: 0;
+    }
+}
+
+.BurgerLove button a:hover{color: brown;}
 
 .BurgerLove .SpecialElite {
     font-family: 'Special Elite', cursive;
@@ -315,61 +235,124 @@ footer ul {padding: 0;}
     color: rgb(21, 21, 61);
 }
 
-@media (min-width: 1200px) {
-    .card-columns {
-      -webkit-column-count: 1;
-      -moz-column-count: 3;
-      column-count: 3;
-      -webkit-column-gap: 1.25rem;
-      -moz-column-gap: 1.25rem;
-      column-gap: 1.25rem;
-      
-    }
-    .card-columns .card {
-      display: inline-block;
-      width: 100%;
-    }
+#franchise {
+    color: white;
+    background-color: #c4920b;
+    text-align: center;
+    padding-top: 1%;
+    background-size: cover;
 }
 
-@media (max-width: 768px) {
-    .card-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 3;
-      column-count: 2;
-      -webkit-column-gap: 1.25rem;
-      -moz-column-gap: 1.25rem;
-      column-gap: 1.25rem;
-      orphans: 1;
-      widows: 1;
-    }
-    .card-columns .card {
-      display: inline-block;
-      width: 100%;
-    }
-    .flex-hamburguesas {
-        width: 50%;
-    }
-  }
+#franchise img {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    min-height: 200px;
+}
 
-  @media (max-width: 576px) {
-    .card-columns {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-      -webkit-column-gap: 1.25rem;
-      -moz-column-gap: 1.25rem;
-      column-gap: 1.25rem;
-      orphans: 1;
-      widows: 1;
-    }
-    .card-columns .card {
-      display: inline-block;
-      width: 100%;
-    }
-    .flex-hamburguesas {
-        width: 100%;
-    }
-  }
+.sedes {
+    color: #c4920b;
+    background-color: black;
+}
+
+
+#hamburguesas {
+    color: black;
+    background-color: white;
+    text-align: center;
+}    
+
+#hamburguesas div div img {border: solid 3px white;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+}  
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    background-color: #c4920b;
+    color: white;
+    font-size: 1.8vw;
+    padding: 1vw 1vw;
+}
+.text a {color: white;}
+
+.fila-1{width:100%;position:relative}
+.fila-2{width:50%;position:relative}
+.fila-3{width:33.33333%;position:relative}
+
+.fila-3:hover .image {opacity: 0.3;}
+.fila-3:hover .middle {opacity: 1;}
+  
+.fila-2:hover .image {opacity: 0.3;}
+.fila-2:hover .middle {opacity: 1;}
+
+.fila-1:hover .image {opacity: 0.3;}
+.fila-1:hover .middle {opacity: 1;}
+
+
+
+#menuHamburguesas {
+    color: black;
+    font-size: 0.85rem;
+}
+
+#menuHamburguesas h2 {
+    color: white;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 5rem;
+    font-family: 'Podkova', serif;
+}
+
+#menuHamburguesas .fondoMenu {
+    background-image: url("Voraz/img/FondoMenu.jpg");
+    background-attachment: fixed;
+}
+
+
+#contact-form {
+    background-color: white;
+    color: black;
+    padding: 2% 0% 2% 0%;
+}
+
+.submit {
+    color: white;
+    background-color: #c4920b;
+    border-color: #c4920b;
+    width: 100%;
+    letter-spacing: 0.5em;
+}
+.submit:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-size: 10;
+    cursor: pointer;
+}
+
 
 @keyframes aparecer {
     0% {
