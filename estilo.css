@@ -1,7 +1,6 @@
 body {
     background-color: black;
     color: white;
-    margin: 0 1% 0 1%;
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
     letter-spacing: 0.1vw;
@@ -107,8 +106,6 @@ hr {border-top: 1px solid #c4920b;}
 .aparecer {
     animation-duration: 4s;
     animation-name: aparecer;
-    margin: 0;
-    padding: 0;
 }
 
 .scrollbar { 
@@ -123,7 +120,6 @@ hr {border-top: 1px solid #c4920b;}
 
 .scrollbar-color::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);
     background-color: white; 
 }
 
@@ -311,8 +307,6 @@ hr {border-top: 1px solid #c4920b;}
 .fila-1:hover .image {opacity: 0.3;}
 .fila-1:hover .middle {opacity: 1;}
 
-
-
 #menuHamburguesas {
     color: black;
     font-size: 0.85rem;
@@ -352,7 +346,6 @@ hr {border-top: 1px solid #c4920b;}
     font-size: 10;
     cursor: pointer;
 }
-
 
 @keyframes aparecer {
     0% {
